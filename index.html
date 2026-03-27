@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="Photos/U.jpg">
+  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-inner">
+      <!-- Logo / Brand -->
+      <a href="#home" class="nav-logo">Unish<span class="dot">.</span></a>
+
+      <!-- Desktop nav links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home"     class="nav-link">Home</a></li>
+        <li><a href="#about"   class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Right-side controls -->
+      <div class="nav-controls">
+        <!-- Dark / light toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="icon-sun">☀️</span>
+          <span class="icon-moon">🌙</span>
+        </button>
+
+        <!-- Hamburger (mobile) -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile drawer -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#home"     class="mobile-link">Home</a></li>
+        <li><a href="#about"   class="mobile-link">About</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section id="home" class="hero">
+      <!-- Decorative background grid -->
+      <div class="hero-grid" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <!-- Eyebrow label -->
+        <span class="hero-eyebrow reveal">Available for work</span>
+
+        <h1 class="hero-name reveal">
+          Unish<br/>Maharjan
+        </h1>
+
+        <p class="hero-tagline reveal">
+          Fullstack Developer
+        </p>
+
+        <p class="hero-sub reveal">
+          I build fast, accessible, and beautifully crafted web experiences
+          that feel as good as they look.
+        </p>
+
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact"  class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+
+      <!-- Floating badge -->
+      <div class="hero-badge reveal" aria-hidden="true">
+        <span>React</span><span>TypeScript</span><span>Node</span>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         ABOUT
+    ============================================================ -->
+    <section id="about" class="about section">
+      <div class="container">
+
+        <div class="section-label reveal">// about me</div>
+        <h2 class="section-title reveal">A bit about<br/>who I am</h2>
+
+        <div class="about-grid">
+          <!-- Bio -->
+          <div class="about-bio reveal">
+            <p>
+              Hey! I'm Unish — a fullstack developer based in Kathmandu. I specialize in turning complex ideas into intuitive, pixel-perfect products. I’m passionate about performance, accessibility, and the small details that make an interface feel truly polished. I’ve built projects that showcase my skills in [HTML, CSS, JavaScript, React, Node.js, etc.], and I’m always eager to learn, experiment, and create impactful solutions.
+            </p>
+            <p>
+              When I'm not pushing pixels, you'll find me hiking trails, tinkering
+              with side projects, or obsessing over a great cup of coffee.
+            </p>
+            <a href="#" class="btn btn-outline">Download CV ↗</a>
+          </div>
+
+          <!-- Skills -->
+          <div class="about-skills reveal">
+            <h3 class="skills-heading">Skills &amp; Tools</h3>
+            <ul class="skills-list">
+              <li class="skill-tag">HTML5</li>
+              <li class="skill-tag">CSS / Tailwind</li>
+              <li class="skill-tag">JavaScript</li>
+              <li class="skill-tag">TypeScript</li>
+              <li class="skill-tag">React</li>
+              <li class="skill-tag">Next.js</li>
+              <li class="skill-tag">Node.js</li>
+              <li class="skill-tag">REST APIs</li>
+              <li class="skill-tag">Git &amp; GitHub</li>
+              <li class="skill-tag">Figma</li>
+              <li class="skill-tag">Tailwind CSS</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         PROJECTS
+    ============================================================ -->
+    <section id="projects" class="projects section">
+      <div class="container">
+
+        <div class="section-label reveal">// work</div>
+        <h2 class="section-title reveal">Selected<br/>Projects</h2>
+
+        <!-- Project cards grid -->
+        <div class="projects-grid">
+
+          <!-- Card 1 -->
+          <article class="project-card reveal">
+            <div class="card-image">
+              <!-- Placeholder gradient image -->
+              <div class="img-placeholder img-1" role="img" aria-label="Lumina Dashboard preview"><img src="Photos/unishpasal.png" style="width: 100%; height: 100%; object-fit: cover;"></div>
+              <div class="card-overlay">
+                <span class="card-tag">React · Tailwind . JavaScript</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Unish Pasal</h3>
+              <p class="card-desc">
+                My first ever a framework project.
+                A E-commerce where you can shop anything you want not that complicated.
+              </p>
+              <div class="card-actions">
+                <a href="https://e-commerce-website-zeta-ruddy.vercel.app/" class="btn btn-sm btn-primary">Live Demo ↗</a>
+                <a href="https://github.com/Unish-Maharjan/E-commerce-website-" class="btn btn-sm btn-ghost">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="project-card reveal">
+            <div class="card-image">
+              <div class="img-placeholder img-2" role="img" aria-label="Shopwave preview"><img src="Photos/hangman.png" style="width: 100%; height: 100%; object-fit: cover;"></div>
+              <div class="card-overlay">
+                <span class="card-tag">Html · CSS · JavaScript</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">HangMan Game</h3>
+              <p class="card-desc">
+                This was my first game project for my college. It is a guessing game. i learned about different kinds of javascripts function using this project/
+              </p>
+              <div class="card-actions">
+                <a href="https://unish-maharjan.github.io/Hangman-game/" class="btn btn-sm btn-primary">Live Demo ↗</a>
+                <a href="https://github.com/Unish-Maharjan/Hangman-game" class="btn btn-sm btn-ghost">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /.projects-grid -->
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         CONTACT
+    ============================================================ -->
+    <section id="contact" class="contact section">
+      <div class="container">
+
+        <div class="section-label reveal">// contact</div>
+        <h2 class="section-title reveal">Let's work<br/>together</h2>
+
+        <div class="contact-grid">
+
+          <!-- Contact form -->
+          <form class="contact-form reveal" id="contactForm" novalidate>
+
+  <!-- ✅ REQUIRED: Web3Forms Access Key -->
+  <input type="hidden" name="access_key" value="e417c06a-b5b4-48a5-8648-7796535b1464">
+
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="your name" autocomplete="name" />
+    <span class="field-error" id="nameError"></span>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="@example.com" autocomplete="email" />
+    <span class="field-error" id="emailError"></span>
+  </div>
+
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…"></textarea>
+    <span class="field-error" id="messageError"></span>
+  </div>
+
+  <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+    Send Message
+  </button>
+
+  <div class="form-feedback" id="formFeedback" aria-live="polite"></div>
+</form>
+
+          <!-- Social / aside -->
+          <aside class="contact-aside reveal">
+            <p class="aside-text">
+              I'm always open to hearing about new projects and opportunities.
+              Drop me a line or connect on social media.
+            </p>
+
+            <ul class="social-links">
+              <li>
+                <a href="https://github.com/Unish-Maharjan" class="social-link" aria-label="GitHub">
+                  <!-- GitHub icon SVG -->
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .268.18.58.688.482A10.005 10.005 0 0 0 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/unish-maharjan-0366b0328/" class="social-link" aria-label="LinkedIn">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M19 3A2 2 0 0 1 21 5v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/AfkUnish" class="social-link" aria-label="Twitter / X">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                  Twitter / X
+                </a>
+              </li>
+              <li>
+                <a href="mailto:uniqueunish93@gmail.com" class="social-link" aria-label="Email">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                  uniqueunish93@gmail.com
+                </a>
+              </li>
+            </ul>
+          </aside>
+
+        </div><!-- /.contact-grid -->
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2025 Unish Maharjan</span>
+      
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
